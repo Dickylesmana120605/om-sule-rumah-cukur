@@ -1,0 +1,133 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #DDC1A4;
+}
+body {
+   background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    max-width: 1250px;
+    height: 500px;
+    top: 90px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(198, 68, 68, 0.1);
+}
+
+section{
+    z-index: 1;
+    position: absolute;
+    top:150px; /* Adjust position as  */
+    left: 100px; /* Adjust position as needed */
+    font-size: 200%;
+    }
+    
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    top:50px; /* Adjust position as  */
+    right: 305px; /* Adjust position as needed */
+}
+
+nav ul li {
+    margin-right: 100px;
+    margin: 0 20px; /* Adjust spacing as needed */
+}
+nav ul li a {
+    color: #F2DAC2;
+    text-decoration: none;
+}
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.12rem;
+    background-color: rgb(250, 213, 6);
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 1.5rem;
+}
+h3{
+    font-size: 20px;
+    position: relative;
+    left: 600px;
+    top: -20px;
+    text-align: justify;
+    margin: 2px;
+    line-height: 1.6;
+    }
+    #gb1{
+   
+        position: absolute;
+        width: 80%;
+        height: 85%;
+        top: -2%;
+        left: 10%;
+        border-radius: 10%;
+    }
+#logo{
+    z-index: 3;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+    top: 5%;
+    left: 2%;
+}
+
+
+#lokasi{
+    font-size: 12px;
+    position: relative;
+    bottom: 738px;
+    left: 135%;
+    
+}
+#open{
+    position: relative;
+    right: 13%;
+    bottom: 726px;
+    font-size: 12px;
+}
+#lokasiimg{
+    width: 40px;
+    top: -143px;
+    left: 130%;
+    position: absolute;
+}
+#jam{
+    position: relative;
+    bottom: 750px;
+    left: 167%;
+    font-size: 12px;
+}
+#jamimg{
+    width: 7%;
+    top: -695px;
+    left: 160%;
+    position: relative;
+}
+
+   
+
+
+

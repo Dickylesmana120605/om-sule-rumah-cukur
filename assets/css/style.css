@@ -1,0 +1,199 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #DDC1A4;
+}
+
+body {
+    background-image: url(/assets/image/bg1.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50px; /* Adjust position as  */
+    right: 300px; /* Adjust position as needed */
+}
+
+nav ul li {
+    margin-right: 100px;
+    margin: 0 20px; /* Adjust spacing as needed */
+}
+nav ul li a {
+    color: #F2DAC2;
+    text-decoration: none;
+}
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.12rem;
+    background-color: rgb(250, 213, 6);
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 1.5rem;
+}
+#logo{
+    z-index: 3;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+    top: 6%;
+    left: 0.5%;
+}
+
+section{
+    z-index: 1;
+    position: absolute;
+    top: 150px; /* Adjust position as  */
+    left: 100px; /* Adjust position as needed */
+    font-size: 200%;
+}
+span{
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+    left: 25px;
+    position: relative;
+}
+span2{
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    left: -350px; 
+}
+
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #5cb1ba;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fff;
+    margin-top: 35%;
+    left: 10%;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #5cb1ba;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 105%;
+}
+
+button:hover {
+    color: #111;
+}
+
+h1{
+    font-size: 80px;
+    position: relative;
+    top:30px;
+    left: 20px;
+}
+h2{
+    font-size: 80px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+div{
+    background-color: black;
+    width: 264%;
+    height: 40PX;
+    position: relative;
+    bottom: 375PX;
+    right: 100px;
+}
+p{
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    flex-direction: row;
+}
+#lokasi{
+    position: relative;
+    bottom: 3px;
+    left: 69%;
+    
+}
+#open{
+    position: relative;
+    right: 5%;
+}
+#lokasiimg{
+    width: 40px;
+    top: 3px;
+    left: 78.5%;
+    position: relative;
+}
+#jam{
+    position: relative;
+    bottom: 3px;
+    left: 73%;
+}
+#jamimg{
+    width: 2.5%;
+    top: 7px;
+    left: 84%;
+    position: relative;
+}
+#panah{
+    width: 3.5%;
+    height: 110%;
+    top: 470px;
+    position: absolute;
+    left: 26%;
+}
+#panah{
+    width: 3.5%;
+    height: 110%;
+    top: 470px;
+    position: absolute;
+    left: 26%;
+    animation: moveArrow 2s infinite;
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

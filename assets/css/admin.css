@@ -1,0 +1,173 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efeee4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #686D76;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(198, 68, 68, 0.1);
+}
+
+.main-content {
+    flex: 1;
+    min-width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    color: #fbfafa;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    line-height: 1.6;
+    color: white;
+}
+.box1{
+    top:-30px ;
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+}
+
+/*Aside*/
+.sidebar {
+    background-color: rgb(44, 42, 42);
+    color: aliceblue;
+    width: 300px;
+    min-height: 100vh;
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    top: 249px;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: rgb(73, 74, 71);
+    border-radius: 10px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Button*/
+.button {
+    background-color: #686D76;
+    color: #0f1923;
+    width: 15em;
+    height: 2.9em;
+    border: #060606.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover {
+    background-color: #333;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  
+  .text {
+    margin: 0 20%;
+  }
+  /*style umum untuk tabel */
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size:1em ;
+    text-align: left;
+    background-color: #2b2929;
+    color: #dddddd;
+  }
+   /*style untuk header tabel */
+   table thead tr{
+    background-color: rgb(44, 42, 42);
+    text-align: left;
+    font-weight: bold;
+   }
+   /*style untuk header tabel */
+   table th,table td{
+    padding: 12px 15px;
+    border: 1px solid #dddddd
+   }
+   .text{
+    left: 10px;
+}
+
+   #logo{
+    z-index: 3;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+    top: 12px;
+    left: -33%;
+   }
+ h1{
+        font-size: 80px;
+        position: relative;
+        left: -2px;
+        bottom: -20px;
+   }
+
+h2{
+    position: relative;
+    bottom: 13px;
+    left: 60px;
+}
+header{
+background-color:rgb(44, 42, 42);
+width: 61%;
+height: 68px;
+position: relative;
+top: 130px;
+left: 445px;
+border-radius: 10px;
+}
+
+.th1{
+    left: 100%;
+    position: relative;
+}
+   .text{
+    position: relative;
+    left: -4%;
+
+   }

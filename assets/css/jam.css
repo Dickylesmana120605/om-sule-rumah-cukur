@@ -1,0 +1,255 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #DDC1A4;
+}
+body {
+  background-image: url(/assets/image/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 700px;
+}
+
+section{
+    z-index: 1;
+    position: absolute;
+    top:150px; /* Adjust position as  */
+    left: 100px; /* Adjust position as needed */
+    font-size: 200%;
+    }
+    
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    top:50px; /* Adjust position as  */
+    right: 320px; /* Adjust position as needed */
+}
+
+nav ul li {
+    margin-right: 100px;
+    margin: 0 20px; /* Adjust spacing as needed */
+}
+nav ul li a {
+    color: #F2DAC2;
+    text-decoration: none;
+}
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.12rem;
+    background-color: rgb(250, 213, 6);;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 1.5rem;
+}
+h3{
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 100px;
+
+}
+#logo{
+    z-index: 3;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+    top: 3%;
+    left: 2%;
+}
+#lokasi{
+    font-size: 12px;
+    position: relative;
+    bottom: 190px;
+    left: 332%;
+    
+}
+#open{
+    position: relative;
+    left: -80px;
+    bottom: 180px;
+    font-size: 12px;
+}
+#lokasiimg{
+    width: 40px;
+    top: -143px;
+    left: 320%;
+    position: absolute;
+}
+#jam{
+    position: relative;
+    bottom: 205px;
+    left: 400%;
+    font-size: 12px;
+}
+#jamimg{
+    width: 16%;
+    top: -147px;
+    left: 383%;
+    position: relative;
+}
+.box1{
+    background-color:#977656;
+    width: 180px;
+    height: 40PX;
+    position: absolute;
+    bottom: 400px;
+    left: 110px;
+    display: flex;
+    border-radius: 15px;
+    } 
+
+
+.box2{
+    background-color:white ;
+    width: 200px;
+    height: 80PX;
+    position: absolute;
+    bottom: 322px;
+    left: 100px;
+    display: flex;
+    border-radius: 15px;
+  }   
+  .box3{
+    background-color:#977656;
+    width: 180px;
+    height: 40PX;
+    position: absolute;
+    bottom: 400px;
+    left: 450px;
+    display: flex;
+    border-radius: 15px;
+    } 
+
+
+.box4{
+    background-color:white ;
+    width: 200px;
+    height: 80PX;
+    position: absolute;
+    bottom: 322px;
+    left: 440px;
+    display: flex;
+    border-radius: 15px;
+  }   
+  .box5{
+    background-color:#977656;
+    width: 180px;
+    height: 40PX;
+    position: absolute;
+    bottom: 400px;
+    left: 810px;
+    display: flex;
+    border-radius: 15px;
+    } 
+
+
+.box6{
+    background-color:white ;
+    width: 200px;
+    height: 80PX;
+    position: absolute;
+    bottom: 322px;
+    left: 800px;
+    display: flex;
+    border-radius: 15px;
+  }   
+  .box7{
+    background-color:#977656;
+    width: 180px;
+    height: 40PX;
+    position: absolute;
+    bottom: 400px;
+    left: 1210px;
+    display: flex;
+    border-radius: 15px;
+    } 
+.box8{
+    background-color:white ;
+    width: 200px;
+    height: 80PX;
+    position: absolute;
+    bottom: 322px;
+    left: 1200px;
+    display: flex;
+    border-radius: 15px;
+  }   
+  button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #DDC1A4;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fff;
+    margin-top: 40%;
+    left: 46%;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #c16f18;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+ #p1{
+   left: 70px;
+   position: relative;
+   bottom: -12px;
+   color: #fff;
+ }
+ 
+ 
+ #p3{
+    left: 42px;
+   position: relative;
+   bottom: -12px;
+   color: #fff;
+
+ }
+ #p5{
+    left: 34px;
+   position: relative;
+   bottom: -12px;
+   color: #fff;
+
+ }
+ #p7{
+    left: 35px;
+   position: relative;
+   bottom: -12px;
+   color: #fff;
+
+ }
+ 
+ 

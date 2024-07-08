@@ -1,0 +1,188 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #DDC1A4;
+}
+body {
+    background-image: url(/assets/image/hairstyle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+section{
+    z-index: 1;
+    position: absolute;
+    top:150px; /* Adjust position as  */
+    left: 100px; /* Adjust position as needed */
+    font-size: 100%;
+    }
+    
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    top:50px; /* Adjust position as  */
+    right: 320px; /* Adjust position as needed */
+}
+
+nav ul li {
+    margin-right: 100px;
+    margin: 0 20px; /* Adjust spacing as needed */
+}
+nav ul li a {
+    color: #F2DAC2;
+    text-decoration: none;
+}
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.12rem;
+    background-color:  rgb(250, 213, 6);;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 1.5rem;
+}
+
+h3{
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 100px;
+
+}
+#logo{
+    z-index: 3;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+    top: 4%;
+    left: 2%;
+}
+#lokasi{
+    font-size: 12px;
+    position: relative;
+    bottom: 389px;
+    left: 125%;
+    
+}
+#open{
+    position: relative;
+    left: -10%;
+    bottom: 382px;
+    font-size: 12px;
+}
+#lokasiimg{
+    width: 40px;
+    top: -136px;
+    left: 120%;
+    position: absolute;
+}
+#jam{
+    position: relative;
+    bottom: 405px;
+    left: 150%;
+    font-size: 12px;
+}
+#jamimg{
+    width: 50px;
+    top: -51%;
+    left: 143%;
+    position: absolute;
+}
+#m1{
+    position: relative;
+    top:10%;
+    left: 0px;
+}
+
+#m2{
+    position: relative;
+    top: 155px;
+    left: 10px;
+}
+
+#m3{
+    position: relative;
+    top: 356px;
+    left: 10px;
+}
+.container {
+    padding: 20px;
+}
+
+.hairstyle {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #3d3c3c;
+    color: #2F3645;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px; /* Fixed width for cards */
+    box-sizing: border-box; /* Include padding and border in the width */
+    overflow: hidden; /* Hide overflow for the contained elements */
+    transition: box-shadow 0.3s;
+}
+
+.hairstyle-image {
+    width: 100%; /* Ensure image takes the full width of the card */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #DDC1A4;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fff;
+    margin-top: 44%;
+    left: 44%;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #c16f18;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Website</title>
+    <link rel="stylesheet" href="/assets/css/antrian.css">
+</head>
+<body>
+    <header>
+        <div class="container"></div>
+        <nav>
+            <img id="logo" src="/assets/image/logo.png" alt="logo.png" class="logo">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/assets/page/about.html">About</a></li>
+                <li><a href="/assets/page/contact.html">Contact</a></li>
+            </ul>
+        </nav>  
+    </header>
+    
+    <main>
+        <section>
+            <form id="queueForm" class="form">
+                <div class="input-container">
+                    <div id="queueNumber" class="queue-number">
+                        <input placeholder="No. Antrian" type="text" id="queueInput" readonly>
+                        <input placeholder="Nama" type="text" id="nama" required>
+                        <input placeholder="Alamat" type="text" id="alamat" required>
+                        <input placeholder="No.Hp" type="text" id="noHp" required>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <select id="hairstyle" class="form_style" required>
+                        <option value="" disabled selected>Pilih Gaya Rambut</option>
+                        <option value="Spike Hairstyles">Spike Hairstyles</option>
+                        <option value="Skin Fade">Skin Fade</option>
+                        <option value="Trendy boy Hair cuts">Trendy boy Hair cuts</option>
+                        <option value="Hair Style Mohawk">Hair Style Mohawk</option>
+                        <option value="Tapper Hairstyle">Tapper Hairstyle</option>
+                    </select>
+                    <select id="kategori" class="form_style" required>
+                        <option value="" disabled selected>Dewasa/Anak-anak</option>
+                        <option value="Dewasa">Dewasa</option>
+                        <option value="Anak-anak">Anak-anak</option>
+                    </select>
+                    <input placeholder="Harga" type="text" id="harga" readonly>
+                </div>
+                <button class="submit" type="submit">Simpan</button>
+            </form>
+        </section>
+        <script src="/assets/js/antrian.js"></script>
+    </main>  
+</body>
+</html>
