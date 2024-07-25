@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +8,40 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img id="logo" src="/assets/image/logo.png" alt="logo.png" class="logo">
-            <ul>
+        <img id="logo" src="/assets/image/logo.png" alt="logo.png" class="logo">
+        <nav class="nav">
+            <div class="menu-toggle" id="menu-toggle"> 
+                <div class="hamburger"></div>
+            </div>
+                <ul id="nav-list" class="nav-list">
+                <li class="close-menu" id="close-menu">&times;</li>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/assets/page/about.html">About</a></li>
                 <li><a href="/assets/page/contact.html">Contact</a></li>
             </ul>
-        </nav>  
+        </nav>
     </header>
     <main>
         <section>
             <h1>Om Sule</h1>
-            <h2>Rumah Cukur</h2>
+            <h2>Rumah cukur</h2>
             <span>Melayani cukur panggilan</span>
-            <span2>Cakalang Baru,Kota Palopo</span2>
-            <div>
+            <span2>Cakalang Baru, Kota Palopo</span2>
+            <span class="span3">chat admin</span>
+           
                 <img id="lokasiimg" src="/assets/image/img lokasi.png" alt="">
                 <img id="jamimg" src="/assets/image/img jam.png" alt="">
                 <img id="panah" src="/assets/image/panah.png" alt="">
-                <p id="open">open every day</p>
-                <p id="lokasi">cakalang baru</p>
-                <p id="jam">open 08.00-00.00</p>
+                <img onclick="chat()" id="chat" src="/assets/image/chat.png" alt="">
+                <p id="open">Buka setiap hari</p>
+                <p id="lokasi">Cakalang Baru</p>
+                <p id="jam">Open 08.00-00.00</p>
             </div>
         </section>
         <button class="custom-button" onclick="goTo()">Hairstyle</button>
-        <button class="custom-button2" onclick="goToIndex()">order sekarang</button> 
-        <script src="assets/js/script.js"></script>
-        
-    </main>  
+        <button class="custom-button2" onclick="goToIndex()">ADMIN</button>
+        <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/togle.js"></script>
+    </main>
 </body>
 </html>

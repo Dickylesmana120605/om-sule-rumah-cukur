@@ -9,8 +9,12 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="/assets/image/logo.png" alt="logo.png" class="logo">
-            <ul>
+            <div class="menu-toggle" id="menu-toggle"> 
+                <div class="hamburger"></div>
+                </div>
+                <ul id="nav-list" class="nav-list">
+                <li class="close-menu" id="close-menu">&times;</li>
+                <img id="logo" src="/assets/image/logo.png" alt="logo.png" class="logo">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/assets/page/about.html">About</a></li>
                 <li><a href="/assets/page/contact.html">Contact</a></li>
@@ -25,6 +29,7 @@
         </section>
         <button class="custom-button" onclick="antrian()">cukur dirumah</button>
         <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/togle.js"></script>
     </main>
 </body>
 </html>

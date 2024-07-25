@@ -3,7 +3,7 @@ function goToIndex() {
 }
 
 function goTo() {
-    window.location.href = '/assets/page/hairstyle.html';
+    window.location.href = '/assets/page/user.html';
 }
 function goTojs() {
     window.location.href = '/assets/page/jam.html';
@@ -15,3 +15,7 @@ function antrian() {
 function signup() {
     window.location.href = '/assets/page/signup.html';
 }
+function chat(){
+    window.location.href ='/assets/page/chat.html'
+}
+

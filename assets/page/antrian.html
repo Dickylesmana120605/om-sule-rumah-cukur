@@ -10,15 +10,19 @@
     <header>
         <div class="container"></div>
         <nav>
+            <div class="menu-toggle" id="menu-toggle"> 
+                <div class="hamburger"></div>
+                </div>
+                <ul id="nav-list" class="nav-list">
+                <li class="close-menu" id="close-menu">&times;</li>
             <img id="logo" src="/assets/image/logo.png" alt="logo.png" class="logo">
-            <ul>
+        
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/assets/page/about.html">About</a></li>
                 <li><a href="/assets/page/contact.html">Contact</a></li>
             </ul>
         </nav>  
     </header>
-    
     <main>
         <section>
             <form id="queueForm" class="form">
@@ -28,6 +32,8 @@
                         <input placeholder="Nama" type="text" id="nama" required>
                         <input placeholder="Alamat" type="text" id="alamat" required>
                         <input placeholder="No.Hp" type="text" id="noHp" required>
+                        <!-- Input untuk waktu -->
+                        <input placeholder="Waktu" type="time" id="waktu" required>
                     </div>
                 </div>
                 <div class="input-container">
@@ -50,6 +56,7 @@
             </form>
         </section>
         <script src="/assets/js/antrian.js"></script>
+        <script src="/assets/js/togle.js"></script>
     </main>  
 </body>
 </html>

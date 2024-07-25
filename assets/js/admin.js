@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${antrian.nama}</td>
                 <td>${antrian.alamat}</td>
                 <td>${antrian.noHp}</td>
+                <td>${antrian.waktu}</td>
                 <td>${antrian.hairstyle}</td>
                 <td>${antrian.kategori}</td>
                 <td>${antrian.harga}</td>
@@ -39,6 +40,5 @@ document.addEventListener('DOMContentLoaded', function() {
         const antrianData = JSON.parse(localStorage.getItem('antrianData')) || [];
         document.getElementById('queueInput').value = antrianData.length + 1;
     }
-
     loadAntrian();
 });

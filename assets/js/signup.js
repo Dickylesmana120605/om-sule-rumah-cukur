@@ -12,10 +12,16 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         return;
     }
 
-    localStorage.setItem('username', email);
-    localStorage.setItem('password', password);
-    localStorage.setItem('firstname', firstname);
-    localStorage.setItem('lastname', lastname);
+    const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
+
+    if (accounts.find(acc => acc.username === email)) {
+        alert('Username already exists!');
+        return;
+    }
+
+    accounts.push({ username: email, password: password, firstname: firstname, lastname: lastname });
+
+    localStorage.setItem('accounts', JSON.stringify(accounts));
 
     alert('Account created successfully!');
     window.location.href = '/login/index.html';

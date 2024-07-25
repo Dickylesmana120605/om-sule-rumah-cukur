@@ -6,6 +6,7 @@
 }
 body {
     background-image: url(/assets/image/hairstyle.png);
+    background-color: #111;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -29,6 +30,7 @@ nav ul {
     position: absolute;
     top:50px; /* Adjust position as  */
     right: 320px; /* Adjust position as needed */
+    font-size: 20px;
 }
 
 nav ul li {
@@ -53,6 +55,78 @@ li::after {
 li:hover::after {
     width: 1.5rem;
 }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.menu-toggle .hamburger,
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+}
+
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle .hamburger::before {
+  transform: translateY(-8px);
+}
+
+.menu-toggle .hamburger::after {
+  transform: translateY(8px);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+  
+  .menu-toggle .hamburger,
+  .menu-toggle .hamburger::before,
+  .menu-toggle .hamburger::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+  }
+  
+  .menu-toggle .hamburger::before,
+  .menu-toggle .hamburger::after {
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-toggle .hamburger::before {
+    transform: translateY(-8px);
+  }
+  
+  .menu-toggle .hamburger::after {
+    transform: translateY(8px);
+  }
+  .hamburger{
+    left: 10px;
+  }
 
 h3{
     font-size: 20px;
@@ -64,41 +138,10 @@ h3{
 #logo{
     z-index: 3;
     position: absolute;
-    width: 50px;
+    width: 70px;
     margin: 0;
-    top: 4%;
-    left: 2%;
-}
-#lokasi{
-    font-size: 12px;
-    position: relative;
-    bottom: 389px;
-    left: 125%;
-    
-}
-#open{
-    position: relative;
-    left: -10%;
-    bottom: 382px;
-    font-size: 12px;
-}
-#lokasiimg{
-    width: 40px;
-    top: -136px;
-    left: 120%;
-    position: absolute;
-}
-#jam{
-    position: relative;
-    bottom: 405px;
-    left: 150%;
-    font-size: 12px;
-}
-#jamimg{
-    width: 50px;
-    top: -51%;
-    left: 143%;
-    position: absolute;
+    top: -50%;
+    left: -265%;
 }
 #m1{
     position: relative;
@@ -146,7 +189,7 @@ h3{
 }
 button {
     padding: 0.8em 1.8em;
-    border: 2px solid #DDC1A4;
+    border: 2px solid red;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -158,7 +201,7 @@ button {
     font-family: inherit;
     color: #fff;
     margin-top: 44%;
-    left: 44%;
+    left: 43%;
    }
    
    button::before {
@@ -169,7 +212,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #c16f18;
+    background: #5cb1ba;
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -182,7 +225,95 @@ button {
    button:hover {
     color: #111;
    }
-   
 
+@media screen and (max-width: 360px){
+    body{
+        background-image: url(/assets/image/h3.png);
+        position: relative;
+          }
+    #logo{
+        top: 40px;
+        left: 70px;
+        position: relative;
+            
+        }
+    nav ul{
+        left: 220px;
+        top: -45px;
+        font-size: 12px;
+        
+    }
+     
+
+    button{
+        left: 125px;
+        top: 450px;
+        font-size: 10px;
+        position: relative;
+    }  
+        .menu-toggle {
+          display: flex;
+          width: 30px;
+          height: 30px;
+          margin: 1.3rem .5rem;
+      }
+      
+      
+      
+      nav .nav-list{
+        justify-content: space-between;
+      }
+      
+      .nav-list {
+          display: none;
+          width: 100%;
+          text-align: left;
+          background-color: var(--background-color);
+      }
+      
+      .nav-list li a {
+        font-size: 17px;
+        
+      }
+
+      nav ul li a {
+        color: white;
+    }
+      
+      .nav-list.active {
+        display: block;
+        flex-direction: column;
+      }
+      
+      .nav-list li:hover::after {
+      width: 0rem;
+      }
+      
+      .menu-toggle.hidden {
+        display:none;
+      }
+       
+          nav li > a {
+            font-size: 15px;
+            margin: 10px -220px;
+        
+        }
+
+    
+      }
+      
+      .close-menu {
+        display: none;
+        position: absolute;
+        top:70px;
+        right: 100%;
+        font-size: 40px;
+        cursor: pointer;
+        color: rgb(213, 209, 209);
+        }
+        
+        .nav-list.active .close-menu {
+          display:block;
+        }    
 
 

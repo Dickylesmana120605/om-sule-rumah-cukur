@@ -148,3 +148,15 @@
       opacity: 0;
     }
   }
+  
+  @media ( max-width: 360px) {
+    body {
+      background-image: url(/assets/image/sg.png);
+      background-size:475px;
+      background-repeat: no-repeat;
+  }
+  .form {
+    left: 1px;
+  }
+}
+  

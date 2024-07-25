@@ -5,9 +5,10 @@
     color: #DDC1A4;
 }
 body {
-    background-image: url(/assets/image/g1.png);
+    background-color: #303030;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 nav ul {
     list-style: none;
@@ -19,6 +20,7 @@ nav ul {
     position: absolute;
     top:50px; /* Adjust position as  */
     right: 320px; /* Adjust position as needed */
+    font-size: 20px;
 }
 nav ul li {
     margin-right: 100px;
@@ -42,6 +44,41 @@ li::after {
 li:hover::after {
     width: 1.5rem;
 }
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+  
+  .menu-toggle .hamburger,
+  .menu-toggle .hamburger::before,
+  .menu-toggle .hamburger::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+  }
+  
+  .menu-toggle .hamburger::before,
+  .menu-toggle .hamburger::after {
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-toggle .hamburger::before {
+    transform: translateY(-8px);
+  }
+  
+  .menu-toggle .hamburger::after {
+    transform: translateY(8px);
+  }
 section{
     z-index: 1;
     position: absolute;
@@ -52,41 +89,10 @@ section{
     #logo{
         z-index: 3;
         position: absolute;
-        width: 50px;
+        width: 65px;
         margin: 0;
         top: 4%;
         left: 1%;
-    }
-    #lokasi{
-        font-size: 12px;
-        position: relative;
-        bottom: 415px;
-        left: 259%;
-        
-    }
-    #open{
-        position: relative;
-        right: 25%;
-        bottom: 406px;
-        font-size: 12px;
-    }
-    #lokasiimg{
-        width: 40px;
-        top: -143px;
-        left: 250%;
-        position: absolute;
-    }
-    #jam{
-        position: relative;
-        bottom: 430px;
-        left: 300%;
-        font-size: 12px;
-    }
-    #jamimg{
-        width: 12%;
-        top: -147px;
-        left: 289%;
-        position: absolute;
     }
     h3{
         font-size: 20px;
@@ -110,25 +116,177 @@ section{
         position: absolute;
         left: -12.5%;
         width: 40px;
-        top: 44%;
+        top: 50%;
     }
     #email{
         position: absolute;
         left: -12.5%;
         width: 40px;
-        top: 55%;
+        top: 65%;
     }
     #ig{
         position: absolute;
         left: -13%;
         width: 38px;
-        top: 68%;
+        top: 80%;
     }
     #Youtube{
         position: absolute;
         left: -13%;
         width: 33px;
-        top: 81%;
+        top: 95%;
     }
    
+    @media screen and (max-width: 360px) {
+    body{
+        overflow-x:hidden;
+    }
+        
+    nav ul {  
+        right: -10px;
+        font-size: 15px;
+        margin-top: -10px;
+   }
+
+    section {
+        margin: 1rem;
+    }
+    h1{
+        font-size: 30px;
+        left: -100px;
+        top: -30px;
+        position: relative;
+    }
+        
+    h2 {
+        font-size: 30px;
+        left: -100px;
+        top: -35px;
+        position: relative;
+        margin: 0.1 rem;
+
+    }
+
+   
+
+    p1{
+        position: relative;
+        left: 105px;
+        top: 480px;
+    } 
+    h3{
+        font-size: 15px;
+        margin-bottom: 15px;
+        position: relative;
+        top: -15px;
+        left: -68px;
+    }
+    #wa{
+        position: absolute;
+        left: -40%;
+        width: 40px;
+        top: 20%;
+    }
+    #email{
+        position: absolute;
+        left: -40%;
+        width: 40px;
+        top: 37%;
+    }
+    #ig{
+        position: absolute;
+        left: -40%;
+        width: 38px;
+        top: 53%;
+    }
+    #Youtube{
+        position: absolute;
+        left: -39%;
+        width: 33px;
+        height: 40px;
+        top: 72%;
+    }
+
+    
+
+    .menu-toggle {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin: 2rem .5rem;
+    }
+    
+    
+    
+    nav .nav-list{
+      justify-content: space-between;
+    }
+    
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: left;
+        background-color: var(--background-color);
+    }
+    
+    .nav-list li a {
+      font-size: 17px;
+      
+    }
+
+    nav ul li a {
+      color: white;
+  }
+    
+    .nav-list.active {
+      display: block;
+      flex-direction: column;
+    }
+    
+    .nav-list li:hover::after {
+    width: 0rem;
+    }
+    
+    .menu-toggle.hidden {
+      display:none;
+    }
+     
+        nav li > a {
+          font-size: 15px;
+          margin: 10px 30px;
+    
+      
+  }
+  #logo{
+    left: 350px;
+    top: 15px;
+}
+iframe{
+    top: 370px;
+    width: 380px;
+    height: 350px;
+    left: 15px;
+    position: relative;
+}
+    }
+    
+    .close-menu {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 190px;
+      font-size: 40px;
+      cursor: pointer;
+      color: rgb(213, 209, 209);
+      }
+      
+      .nav-list.active .close-menu {
+        display:block;
+      }    
+
+
+
+   
+
+
        

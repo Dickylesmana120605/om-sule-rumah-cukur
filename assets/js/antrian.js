@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const namaInput = document.getElementById('nama');
     const alamatInput = document.getElementById('alamat');
     const noHpInput = document.getElementById('noHp');
+    const waktuInput = document.getElementById('waktu');
     const hairstyleSelect = document.getElementById('hairstyle');
     const kategoriSelect = document.getElementById('kategori');
     const hargaInput = document.getElementById('harga');
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nama: namaInput.value,
             alamat: alamatInput.value,
             noHp: noHpInput.value,
+            waktu: waktuInput.value,
             hairstyle: hairstyleSelect.value,
             kategori: kategoriSelect.value,
             harga: hargaInput.value
@@ -60,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
         updateQueueNumber();
         queueForm.reset();
         hargaInput.value = '';
+
+        alert('Data pemesanan berhasil diinput!');
     });
 
     updateQueueNumber();
